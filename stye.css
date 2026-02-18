@@ -1,0 +1,523 @@
+*{
+  padding:0px;
+  margin:0px;
+}
+body{
+  background-color: rgb(176, 175, 173);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header section with nav */
+.main-header{
+  display:flex;
+  border-radius: 8px;
+  background-color: rgb(106, 104, 108);
+  margin: 30px 20px;
+  
+}
+.logo{
+  align-content: center;
+  margin-left: 10px;
+  color: rgb(28, 16, 10);
+
+  }
+.nav-links{
+  display:flex;
+  list-style-type: none;
+  gap:30px;
+}
+.nav-list{
+  display:flex;
+  padding:20px 40px;
+  list-style-type: none;
+  gap:15px;
+  margin-left: 60px;
+  justify-content: space-between;
+  font-style: italic;
+  font-weight:bold;
+  }
+.nav-list a{
+  text-decoration: none;
+  color: rgb(27, 14, 7);
+  
+}
+.expButton{
+  margin-top: 40px;
+  text-align: center;
+  font-style: italic;
+  font-weight:bold;
+  padding:10px 0;
+}
+.into_primary{
+   margin-left:0;
+  margin-right:30px;
+  padding:20px 20px;
+  background-color: #1c1111;
+  color: #bdbdbd;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.into_secondary{
+  margin-left:30px;
+  padding:20px 20px;
+ background-color: #1c1111;
+  
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.into_secondary a{
+  text-decoration: none;
+ color: #bdbdbd;
+}
+
+
+/* Home section */
+.homediv{
+  display:flex;
+  gap:80px;
+  margin-left: 80px;
+  
+  
+}
+.leftbox{
+  position: absolute;
+  border:2px solid rgb(106, 104, 108);
+  margin:30px 20px;
+  height:400px;
+  width:250px;
+  border-radius: 100px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  
+}
+.leftbox img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display:block;  
+}
+.overlay{
+   font-style: italic;
+   font-weight:bold;
+    position:absolute;
+    color:rgb(54, 31, 31);
+    top:20%;
+    left:70%;
+    opacity: 0;
+    transition: opactity 0.4s ease;
+}
+.leftbox:hover .overlay{
+    opacity: 1;
+}
+.rightbox{
+  margin-top: 50px;
+  margin-left: 50px;
+  width:550px;
+}
+#greet{
+  font-style: italic;
+  font-size: 40px;
+  color: rgb(57, 51, 43);
+}
+.greet-content{
+  margin-top:50px;
+}
+.intro{
+  font-size: 16px;
+  font-family: sans-serif;
+  color: rgb(48, 45, 40);
+}
+
+/* Generic title style */
+.titles{
+  font-size: 30px;
+  font-style: italic;
+  font-weight:bold;
+  text-align: center;
+  color: rgb(59, 49, 38);
+}
+
+/* About section */
+.aboutpage{
+  margin-top: 50px;
+
+}
+.abtlist{
+  margin-top:50px;
+  height:500px;
+}
+.aboutimg{
+  margin-left:40%;
+  border-radius: 20px;
+}
+.aboutContent{
+  width:650px;
+  margin-left: 25%;
+  
+}
+/* project section */
+.projectpage{
+  margin-top:150px;
+}
+.project-grid{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:30px;
+  border-radius: 10px;
+  margin: 30px 50px;
+}
+
+.project{
+  border:2px solid  rgb(59, 49, 38);
+  border-radius: 10px;
+  padding:20px 30px;
+}
+.projectlist{
+  list-style-type:none;
+  justify-content: center;
+  align-content: center;
+}
+/* Experience section */
+.experiencePage{
+  margin-top:130px;
+}
+.expcontent{
+  margin: 30px 100px;
+  text-align: center;
+  width:80%;
+}
+/* Tool section */
+.skillPage{
+  margin-top: 100px;
+}
+.tech1{
+  margin:40px 0px;
+  color: rgb(61, 34, 1);
+  font-weight: bold;
+  font-style: italic;
+}
+.FE-tech-grid{  
+  margin-top: 20px;
+  padding:30px 60px;
+  display: flex;
+  gap:40px;
+}
+
+/* Skill section */
+
+.skilllist{
+  display:grid;
+  grid-template-columns: repeat(5,1fr);
+  gap:60px;
+  display:flex;
+}
+.skill-card{
+    background-color: rgb(126, 124, 121);
+    border-radius:10px;
+    padding:10px 10px;
+    height:60px;
+    width:60px;
+    margin-left:25px;
+}
+.skill-card img{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+}
+.card-text{
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(52, 50, 50);
+  margin-top:10px;
+}
+.card-texts{
+  margin-left:20px;
+  margin-top:10px;
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(52, 50, 50);
+}
+/* Testimonial section  */
+.certicatepage{
+  margin-top:100px;
+}
+.cert{
+  text-align:center;
+  padding:30px 20px;
+  background-color:rgb(126, 124, 121);
+  border:2px solid rgb(36, 31, 31);
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.cert-border{
+   margin:40px 180px;
+   border-radius: 10px;
+}
+
+/* Contact section */
+.contantpage{
+  margin-top:90px;
+  
+}
+.Con-tex{
+  padding:20px 80px;
+  margin:20px 80px;
+  text-align: center;
+}
+.contact-info{
+  display:flex;
+  margin:40px 40px;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.contact-sec{
+  padding:30px;
+}
+.leftCont-sec{
+  padding:20px;
+  border-radius: 10px;
+  background-color: rgb(154, 153, 152);
+}
+.leftCont-sec h4{
+ font-style: italic; 
+ color: rgb(35, 21, 13); 
+ font-weight:bold;
+
+}
+.input-group {
+  position: relative;
+  width: 350px;
+  margin: 20px;
+  font-family: sans-serif;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 18px 16px;
+  font-size: 16px;
+  border: 2px solid #bdbdbd;
+  border-radius: 14px;
+  outline: none;
+  background: transparent;
+}
+
+.input-group label {
+  position: absolute;
+  top: -10px;
+  left: 16px;
+  padding: 0 6px;
+  font-size: 14px;
+  color: #1c1111;
+}
+.textarea{
+  width: 100%;
+  padding: 18px 16px;
+  font-size: 16px;
+  border: 2px solid #bdbdbd;
+  border-radius: 14px;
+  outline: none;
+  background: transparent;
+}
+.primary{
+  padding:20px;
+  background-color: #1c1111;
+  color: #bdbdbd;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+/* Footer section */
+.footer-content{
+  margin-top:50px;
+  text-align: center;
+}
+.footer-info{
+  margin-top:30px;
+}
+.footer-list{
+ display: flex;
+ list-style-type: none;
+ gap:20px;
+ justify-content: center;
+margin-top:30px;
+}
+.social-links{
+  margin-top:30px;
+  gap:50px;
+}
+.social-links a{
+  color:rgb(28, 21, 21);
+  text-decoration: none;
+}
+
+/* Responsive design */
+ 
+
+/* mobile first */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 20px;
+}
+@media (max-width: 480px) {
+
+  /* Header */
+  .logo {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 8px;
+    padding: 5px;
+  }
+
+  /* Home */
+  #greet {
+    font-size: 26px;
+  }
+
+  .intro {
+    font-size: 14px;
+  }
+  .expButton {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .into_primary,
+  .into_secondary {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Titles */
+  .titles {
+    font-size: 24px;
+  }
+
+  /* Experience */
+  .expcontent {
+    margin: 20px;
+    width: 100%;
+  }
+
+  /* Certificates */
+  .cert-border {
+    margin: 20px;
+  }
+
+  /* Contact text */
+  .Con-tex {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  /* Footer */
+  .footer-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* tab view */
+@media (max-width: 768px) {
+
+  /* Header */
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-list {
+    margin-left: 10;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+     align-items: center;
+  }
+
+  /* Home Section */
+  .homediv {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .leftbox {
+    position: relative;
+    width: 220px;
+    height: 320px;
+  }
+
+  .rightbox {
+    width: 90%;
+    margin: 0;
+    text-align: center;
+  }
+
+  #greet {
+    font-size: 32px;
+  }
+
+  /* About Section */
+  .aboutimg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .aboutContent {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  /* Projects */
+  .project-grid {
+    grid-template-columns: 1fr;
+    margin: 20px; 
+  }
+
+  /* Skills */
+  .FE-tech-grid {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .skilllist {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  /* Contact */
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+}
